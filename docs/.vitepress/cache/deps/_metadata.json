@@ -1,0 +1,58 @@
+{
+  "hash": "25f74b2f",
+  "configHash": "2b7216e8",
+  "lockfileHash": "b4f97e08",
+  "browserHash": "4cd7ab80",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/.pnpm/vue@3.4.38/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "b9e27fb8",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.3.8/node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "70958142",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../../node_modules/.pnpm/@vueuse+core@11.0.1_vue@3.4.38/node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "da883f04",
+      "needsInterop": false
+    },
+    "@braintree/sanitize-url": {
+      "src": "../../../../node_modules/.pnpm/@braintree+sanitize-url@7.1.0/node_modules/@braintree/sanitize-url/dist/index.js",
+      "file": "@braintree_sanitize-url.js",
+      "fileHash": "5d8160fa",
+      "needsInterop": true
+    },
+    "dayjs": {
+      "src": "../../../../node_modules/.pnpm/dayjs@1.11.13/node_modules/dayjs/dayjs.min.js",
+      "file": "dayjs.js",
+      "fileHash": "113f4acc",
+      "needsInterop": true
+    },
+    "cytoscape-cose-bilkent": {
+      "src": "../../../../node_modules/.pnpm/cytoscape-cose-bilkent@4.1.0_cytoscape@3.30.2/node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js",
+      "file": "cytoscape-cose-bilkent.js",
+      "fileHash": "fbcd1f46",
+      "needsInterop": true
+    },
+    "cytoscape": {
+      "src": "../../../../node_modules/.pnpm/cytoscape@3.30.2/node_modules/cytoscape/dist/cytoscape.esm.mjs",
+      "file": "cytoscape.js",
+      "fileHash": "680433e8",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-III5EX5K": {
+      "file": "chunk-III5EX5K.js"
+    },
+    "chunk-BUSYA2B4": {
+      "file": "chunk-BUSYA2B4.js"
+    }
+  }
+}

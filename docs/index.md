@@ -5,21 +5,20 @@ layout: home
 hero:
   name: "胜遇"
   text: "重新学习编程"
-  tagline: My great project tagline
+  tagline: 
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Blog
+      link: /blog
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: DSA
+      link: /dsa
+    - theme: alt
+      text: xTools
+      link: /xtools
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Blog
+    details: Blog about anything
 ---
 
