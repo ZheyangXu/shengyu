@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "胜遇",
-  description: "重新学习编程.",
+  description: "重新学习编程",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

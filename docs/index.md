@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "胜遇"
-  text: "重新学习编程."
+  text: "重新学习编程"
   tagline: My great project tagline
   actions:
     - theme: brand
