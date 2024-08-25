@@ -44,6 +44,18 @@ export default withMermaid({
         'Copyright © 2024-present <a href="https://github.com/ZheyangXu>Zheyang XU</a>',
     },
   },
+  ignoreDeadLinks: [
+    // ignore exact url "/draft"
+    '/draft',
+    // ignore all localhost links
+    /^https?:\/\/localhost/,
+    // ignore all links include "/repl/""
+    /\/repl\//,
+    // custom function, ignore all links include "ignore"
+    (url: string) => {
+      return url.toLowerCase().includes('ignore')
+    }
+  ],
   markdown: {
     math: true,
     lineNumbers: true,
