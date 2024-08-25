@@ -73,7 +73,62 @@ pnpm vitepress dev docs
 
 ### Markdown Math Support
 
+This is currently opt-in. To enable it, you need to install `markdown-it-mathjax3` and set `markdown.math` to `true` in your config file:
+
+```shell
+pnpm add -D markdown-it-mathjax3
+```
+
+```ts
+// .vitepress/config.ts
+export default {
+  markdown: {
+    math: true
+  }
+}
+```
+
 ### Mermaid Support
+
+Install the [vitepress-plugin-mermaid](https://github.com/emersonbottero/vitepress-plugin-mermaid).
+
+```shell
+pnpm add -D vitepress-plugin-mermaid mermaid
+
+pnpm install --shamefully-hoist 
+```
+
+Add wrapper in `config.mts`:
+
+```ts
+// .vitepress/config.js
+import { withMermaid } from "vitepress-plugin-mermaid";
+
+export default withMermaid({
+  // your existing vitepress config...
+  mermaid:{
+    //mermaidConfig !theme here works for ligth mode since dark theme is forced in dark mode
+  },
+  ...
+});
+```
+
+Use in any Markdown file
+
+```
+<!---any-file.md-->
+
+flowchart TD
+  Start --> Stop
+```
+
+```mermaid
+flowchart TD
+  Start --> Stop
+```
+
+See the [docs 📕](https://emersonbottero.github.io/vitepress-plugin-mermaid/)
+and a [complex example 😎](https://emersonbottero.github.io/vitepress-plugin-mermaid/guide/more-examples.html#render)
 
 ## Deploy
 
