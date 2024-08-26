@@ -41,7 +41,7 @@ export default withMermaid({
       message:
         'Released under the <a href="https://github.com/ZheyangXu/shengyu/main/LICENSE">Apache License</a>.',
       copyright:
-        copyright: 'Copyright © 2024-present <a href="https://github.com/ZheyangXu">ZheyangXu</a>',
+        'Copyright © 2024-present <a href="https://github.com/ZheyangXu">ZheyangXu</a>',
     },
   },
   ignoreDeadLinks: true,
