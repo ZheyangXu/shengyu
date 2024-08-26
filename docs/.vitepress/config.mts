@@ -39,23 +39,12 @@ export default withMermaid({
     socialLinks: [{ icon: "github", link: "https://github.com/ZheyangXu" }],
     footer: {
       message:
-        'Released under the <a href="https://github.com/ZheyangXu/shengyu/main/LICENSE/">Apache License</a>',
+        'Released under the <a href="https://github.com/ZheyangXu/shengyu/main/LICENSE">Apache License</a>.',
       copyright:
-        'Copyright © 2024-present <a href="https://github.com/ZheyangXu>Zheyang XU</a>',
+        copyright: 'Copyright © 2024-present <a href="https://github.com/ZheyangXu">ZheyangXu</a>',
     },
   },
-  ignoreDeadLinks: [
-    // ignore exact url "/draft"
-    '/draft',
-    // ignore all localhost links
-    /^https?:\/\/localhost/,
-    // ignore all links include "/repl/""
-    /\/repl\//,
-    // custom function, ignore all links include "ignore"
-    (url: string) => {
-      return url.toLowerCase().includes('ignore')
-    }
-  ],
+  ignoreDeadLinks: true,
   markdown: {
     math: true,
     lineNumbers: true,
