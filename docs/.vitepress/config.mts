@@ -12,7 +12,7 @@ export default withMermaid({
       { text: "Home", link: "/" },
       { text: "Blog", link: "/blog" },
       { text: "DSA", link: "/dsa" },
-      { text: "xTools", link: "/xtools"},
+      { text: "xTools", link: "/xtools" },
     ],
 
     sidebar: {
@@ -30,10 +30,13 @@ export default withMermaid({
         {
           text: "Vitepress",
           items: [
-            {text: "Getting Started", link: "/xtools/vitepress/getting_started"},
-          ]
-        }
-      ]
+            {
+              text: "Getting Started",
+              link: "/xtools/vitepress/getting_started",
+            },
+          ],
+        },
+      ],
     },
 
     socialLinks: [{ icon: "github", link: "https://github.com/ZheyangXu" }],
@@ -42,6 +45,22 @@ export default withMermaid({
         'Released under the <a href="https://github.com/ZheyangXu/shengyu/main/LICENSE">Apache License</a>.',
       copyright:
         'Copyright © 2024-present <a href="https://github.com/ZheyangXu">ZheyangXu</a>',
+    },
+  },
+  locales: {
+    root: {
+      label: "English",
+      lang: "en",
+    },
+    zh: {
+      label: "中文",
+      lang: "zh",
+      link: "/zh/",
+    },
+    fr: {
+      label: "French",
+      lang: "fr",
+      link: "/fr/",
     },
   },
   ignoreDeadLinks: true,
