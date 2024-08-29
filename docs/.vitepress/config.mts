@@ -12,7 +12,7 @@ export default withMermaid({
       { text: "Home", link: "/" },
       { text: "Blog", link: "/blog" },
       { text: "DSA", link: "/dsa" },
-      { text: "xTools", link: "/xtools"},
+      { text: "xTools", link: "/xtools" },
     ],
 
     sidebar: {
@@ -30,10 +30,13 @@ export default withMermaid({
         {
           text: "Vitepress",
           items: [
-            {text: "Getting Started", link: "/xtools/vitepress/getting_started"},
-          ]
-        }
-      ]
+            {
+              text: "Getting Started",
+              link: "/xtools/vitepress/getting_started",
+            },
+          ],
+        },
+      ],
     },
 
     socialLinks: [{ icon: "github", link: "https://github.com/ZheyangXu" }],
@@ -44,17 +47,33 @@ export default withMermaid({
         'Copyright © 2024-present <a href="https://github.com/ZheyangXu>Zheyang XU</a>',
     },
   },
+  locales: {
+    root: {
+      label: "English",
+      lang: "en",
+    },
+    zh: {
+      label: "中文",
+      lang: "zh",
+      link: "/zh/"
+    },
+    fr: {
+      label: "French",
+      lang: "fr",
+      link: "/fr/", 
+    },
+  },
   ignoreDeadLinks: [
     // ignore exact url "/draft"
-    '/draft',
+    "/draft",
     // ignore all localhost links
     /^https?:\/\/localhost/,
     // ignore all links include "/repl/""
     /\/repl\//,
     // custom function, ignore all links include "ignore"
     (url: string) => {
-      return url.toLowerCase().includes('ignore')
-    }
+      return url.toLowerCase().includes("ignore");
+    },
   ],
   markdown: {
     math: true,
